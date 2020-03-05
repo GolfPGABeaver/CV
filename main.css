@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:200,400,600,800&display=swap');
+
+* {
+    font-family: Oxanium, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgba(75, 75, 75, 1);
+    background-color: rgba(240, 240, 240, 1);
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(100, 100, 100, 1);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px; /* Place content 60px from the top */
+    transition: 0.4s; /* 0.4 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 10px 10px 10px 25px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    transition: font-weight 0.4s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+/* Position and style the close button (top right corner) */
+a.closebtn {
+    padding: 0 10px 0 25px;
+}
+
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 40px;
+    margin: 0;
+    padding: 0 30px 0 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: background-color .4s, color .4s;
+}
+
+.openbtn:hover {
+    color: rgba(50, 150, 50, 1);
+}
+
+.openbtn:focus {
+    outline: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#topSection {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the main heading */
+.nameLogo {
+    padding: 6px 0 0 10px;
+    margin: 0;
+    text-align: left;
+}
+
+.nameLogo > span {
+    color: rgba(50, 150, 50, 1);
+}
+
+@media only screen and (max-width: 400px) {
+    .openbtn {padding: 0 20px 0 10px;}
+    .nameLogo {padding: 6px 0 0 0;}
+}
+
+/* Style for the profile grey box */
+#profile {
+    background-color: rgba(50, 150, 50, 1);
+    margin: 0 30px;
+    padding: 40px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+}
+
+/* Style for the profile picture */
+#profilePic {
+    margin: 20px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(220, 220, 220, 1);
+    border: 4px solid rgba(255, 255, 255, 1);
+    transition: transform .4s, box-shadow .4s;
+    box-shadow: 0 0 2px 0 rgba(100, 100, 100, 1);
+}
+
+#profilePic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 rgba(50, 50, 50, 1);
+}
+
+
+/* Style for the profile content next0 to the picture */
+#profileContent {
+    margin: 0 40px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profileContent > h2 {
+    padding: 0;
+    margin: 20px 0;
+}
+
+#profileContent > h3 {
+    padding: 0;
+    margin: 20px 0;
+}
+
+#profileContent > div {
+    padding: 0;
+    margin: 20px 0;
+}
+
+#profileContent > div > a {
+    margin: 0 15px 0 0;
+}
+
+#profileContent > div > a > img {
+    width: 70px; 
+}
+
+@media only screen and (max-width: 1000px) {
+    #profile {padding: 20px;}
+    #profilePic {height: 250px;}
+    #profileContent {margin: 0 20px;}
+    #profileContent > div > a > img {width: 50px;}
+}
+
+@media only screen and (max-width: 800px) {
+    #profile {flex-direction: column; align-items: center; text-align: center;}
+    #profilePic {height: 200px;}
+    #profileContent > h2 {margin: 20px 0 10px;}
+    #profileContent > h3 {margin: 10px 0;}
+    #profileContent > div > a {margin: 0 5px;}
+}
+
+@media only screen and (max-width: 600px) {
+    #profilePic {height: 175px;}
+    #profileContent > h2 {margin: 20px 0 5px;}
+    #profileContent > h3 {margin: 5px 0;}
+    #profileContent > div {margin: 10px 0;}
+    #profileContent > div > a > img {width: 30px;}
+}
+
+@media only screen and (max-width: 400px) {
+    #profile {margin: 0 10px;}
+}
+    
+@media only screen and (max-width: 300px) {
+    #profilePic {height: 100px; border: 2px solid rgba(255, 255, 255, 1);}
+}
+
+
+/* Style for the content box underneath green box */
+#about {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0 30px;
+    padding: 40px 60px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+}
+
+#description {
+    width: 50%;
+    margin-right: 30px;
+}
+
+#description > h3 {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#description > p {
+    margin: 0;
+    padding: 0;
+}
+
+#description > button {
+    margin: 30px 0 0;
+    padding: 10px 30px; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(150, 150, 150, 1);
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#description > button:hover {
+    box-shadow: 0 0 2px 0 rgba(150, 150, 150, 1);
+    transform: scale(.98);
+    background-color: rgba(250, 250, 250, 1);;
+}
+
+#description > button > a {
+    text-decoration: none;
+    color: rgba(50, 150, 50, 1);
+}
+
+#information {
+    width: 50%;
+    margin: 70px 0 0 70px;
+}
+
+#information > h4 {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+#information > p {
+    font-weight: 200;
+    margin: 5px 0 20px 10px;;
+    padding: 0;
+}
+
+#information > p > a {
+    color: rgba(50, 150, 50, 1);
+    text-decoration: none;
+    transition: color .4s;
+}
+
+#information > p > a:hover {
+    color: orange;
+}
+
+@media only screen and (max-width: 1000px) {
+    #about {flex-direction: column;}
+    #description {width: 100%; margin-right: 0;}
+    #description > button {margin: 30px 0 40px;}
+    #information {width: 100%; margin: 0;}
+    #information > h4 {display: inline-block; width: 15%; vertical-align: top;}
+    #information > p {display: inline-block; width: 33%; vertical-align: top; margin-top: 0;}
+}
+
+@media only screen and (max-width: 800px) {
+    #information > h4 {width: 30%;}
+    #information > p {width: 69%;}
+}
+
+@media only screen and (max-width: 600px) {
+    #about {padding: 40px;}
+    #information > h4 {width: 100%;}
+    #information > p {width: 100%;}
+}
+
+@media only screen and (max-width: 400px) {
+    #about {margin: 0 10px; padding: 20px;}
+}
+
+footer > h6 {
+    text-align: center;
+}
+
+/* --------------------------------------------------- RESUME ------------------------------------------------- */
+
+#title {
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+}
+
+#middle_section, #bottom_section {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    margin: 0 30px;
+    padding: 30px;
+}
+
+#about_resume {
+    margin: 0 20px;
+    width: 50%;
+}
+
+#sub_title {
+    margin: 20px 0 20px;  
+}
+
+#sub_title > span {
+    color: rgba(50, 150, 50, 1);
+}
+
+.timeline {
+    border-left: 3px solid rgba(150, 150, 150, 1);
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.timeline_content::before {
+    display: block;
+    position: relative;
+    top: 40px;
+    left: -56px;
+    content: "";
+    border-top: 3px solid rgba(150, 150, 150, 1);
+    width: 20px;
+    margin: 0;
+}
+
+.timeline_content {
+    box-shadow: 2px 0 4px 0 rgba(150, 150, 150, 1);
+    border-left: 6px solid rgba(50, 150, 50, 1);
+    margin: 20px 40px 20px 20px;
+    padding: 5px 30px;
+}
+
+.timeline_content > h4 {
+    margin: 10px 0;
+}
+
+.timeline_content > h6 {
+    color: rgba(50, 150, 50, 1);
+    margin: 10px 0;
+}
+
+.timeline_content > h6 > span {
+    color: initial;
+    border-left: 1px solid rgba(100, 100, 100, 1);
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.timeline_content > p {
+    margin: 10px 0;
+}
+
+.skillsbox {
+    height: 15px;
+    background-color: rgba(240, 240, 240, 1);
+    border: 1px solid rgba(200, 200, 200, 1);
+}
+
+.skills {
+    height: 15px;
+    background-color: rgba(50, 150, 50, 1);
+}
+
+#bottom_section {
+    border-radius: 0 0 20px 20px;
+    padding: 0 30px 50px;
+}
+
+#bottom_section > div > .timeline_content::before {
+    display: none;
+}
+
+#bottom_section > div > .timeline_content {
+    box-shadow: none;
+    border-left: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    #middle_section, #bottom_section {flex-direction: column;}
+    #sub_title {margin: 30px 0 30px;}
+    #about_resume {width: 100%;}
+}
+
+@media only screen and (max-width: 600px) {
+    #middle_section, #bottom_section {padding: 20px;}
+}
+
+@media only screen and (max-width: 400px) {
+    #middle_section, #bottom_section { margin: 0 10px; padding: 10px;}
+}
+
+/* --------------------------------------------------- PORTFOLIO ------------------------------------------------- */
+
+ #myBtnContainer {
+    margin: 0 30px;
+    padding: 40px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 10px 30px; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(150, 150, 150, 1);
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 2px 0 rgba(150, 150, 150, 1);
+    transform: scale(.98);
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.btn.active {
+    background-color: rgba(50, 150, 50, 1);
+    color: rgba(255, 255, 255, 1);
+}
+  
+.row {
+    margin: 0 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row,
+.row > .column {
+    padding: 20px;
+}
+
+.column {
+    padding: 0;
+    width: 31%;
+    text-align: center;
+    display: none; /* Hide columns by default */
+    box-shadow: 0px 0px 2px 0px rgba(200, 200, 200, 1);
+    margin: 10px;
+    filter: grayscale(100%);
+    transition: filter .4s;
+}
+
+.column:hover {
+    filter: none;
+}
+
+.column > .content > h4 {
+    margin: 0;
+}
+
+.column > .content > h5 {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.column > .content > img,
+.column > .content > a > img {
+    width: 100%;
+    margin: 0 0 10px;
+    box-shadow: 0px 0px 2px 0px rgba(225, 225, 225, 1);
+}
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+    left: 0;
+    padding: 100px 0 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 50%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+.column > .content > a {
+    color: rgba(100, 100, 100, 1);
+    text-decoration: none;
+    transition: color .4s;
+}
+
+.column > .content > a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .column {width: 45.5%;}
+    .lightbox img {max-width: 75%;}
+}
+
+@media only screen and (max-width: 800px) {
+    .column {filter: none;}
+}
+
+@media only screen and (max-width: 600px) {
+    .column {width: 100%;filter: none;}
+    .column > .content > h4 {font-size: 20px;}
+    .column > .content > h4 > span {font-size: 16px;}
+    .btn {padding: 5px 15px; margin: 10px 5px;}
+    .lightbox img {max-width: 90%;}
+}
+
+@media only screen and (max-width: 400px) {
+    .row, #myBtnContainer { margin: 0 10px; padding: 10px;}
+    .column > .content > h4 {font-size: 14px;}
+    .column > .content > h4 > span {font-size: 12px;}
+}

@@ -1,0 +1,51 @@
+/* Font Sizes */
+.xsft {     font-size: 15px;}
+.sft {      font-size: 20px;}
+.mft {      font-size: 30px;}
+.lft {      font-size: 40px;}
+.xlft {     font-size: 50px;}
+
+
+@media only screen and (max-width: 1000px) {
+    .xsft { font-size: 13.5px;}
+    .sft {  font-size: 18px;}
+    .mft {  font-size: 27px;}
+    .lft {  font-size: 36px;}
+    .xlft { font-size: 45px;}
+}
+
+@media only screen and (max-width: 800px) {
+    .xsft { font-size: 12px;}
+    .sft {  font-size: 16px;}
+    .mft {  font-size: 24px;}
+    .lft {  font-size: 32px;}
+    .xlft { font-size: 40px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .xsft { font-size: 10.5px;}
+    .sft {  font-size: 14px;}
+    .mft {  font-size: 21px;}
+    .lft {  font-size: 28px;}
+    .xlft { font-size: 35px;}
+}
+
+@media only screen and (max-width: 400px) {
+    .xsft { font-size: 9px;}
+    .sft {  font-size: 12px;}
+    .mft {  font-size: 18px;}
+    .lft {  font-size: 24px;}
+    .xlft { font-size: 30px;}
+}
+
+/* Font weights */
+.thin {     font-weight: 200;}
+.norm {     font-weight: 400;}
+.bold {     font-weight: 600;}
+.think {    font-weight: 800;}
+
+.per50 {    width: 50%;}
+.per60 {    width: 60%;}
+.per70 {    width: 70%;}
+.per80 {    width: 80%;}
+.per90 {    width: 90%;}
