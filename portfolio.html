@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <nav id="mySidebar" class="sidebar">
+            <a class="xlft norm"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="mft norm" href="index.html">About</a>
+            <a class="mft norm" href="resume.html">Resume</a>
+            <a class="mft norm" href="portfolio.html">Portfolio</a>
+        </nav>
+        <main id="main">
+            <div id="topSection">
+                <button id="myOpenbtn" class="openbtn" onclick="openNav()">&#9776;</button>
+                <h1 class="lft thick nameLogo">Charlie <span>Beavers</span></h1>
+            </div>
+            <div class="profile_resume" id="profile">
+                <h2 class="xlft thick" id="title">Portfolio</h2>
+            </div>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('website')">Website</button>
+                <button class="btn" onclick="filterSelection('javascript')">JavaScript</button>
+                <button class="btn" onclick="filterSelection('other')">Other</button>
+            </div>
+            <div class="row">
+                <div class="column website">
+                    <div class="content">
+                        <h4 class="sft">Young Golfers</h4>
+                        <h5 class="xsft thin">(2nd Coded Website)</h5>
+                        <a href="https://golfpgabeaver.github.io/younggolfers.github.io/" target="_blank">
+                            <img src="images/Young_Golfers.jpg" alt="Young Golfers Website">
+                        </a>
+                    </div>
+                </div>
+                <div class="column website">
+                    <div class="content">
+                        <h4 class="sft">Golf Beaver</h4>
+                        <h5 class="xsft thin">(Website Builder)</h5>
+                        <a href="https://www.golfbeaver.com" target="_blank">
+                            <img src="images/Golf_Beaver.jpg" alt="Golf Beaver Website">
+                        </a>
+                    </div>
+                </div>
+                <div class="column website">
+                    <div class="content">
+                        <h4 class="sft">Karens Dog Walking</h4>
+                        <h5 class="xsft thin">(1st Coded Website)</h5>
+                        <a href="https://golfpgabeaver.github.io/KarensDogWalking.github.io/" target="_blank">
+                            <img src="images/Karens_Dog_Walking.jpg" alt="Karen Dog Walking Website">
+                        </a>
+                    </div>
+                </div>
+                <div class="column javascript">
+                    <div class="content">
+                        <h4 class="sft">Matching Game</h4>
+                        <h5 class="xsft thin">(1st Coded Game)</h5>
+                        <a href="JSGames/MatchingGame/Pairs.htm" target="_blank">
+                            <img src="images/MatchingGame.jpg" alt="Matching Game">
+                        </a>
+                    </div>
+                </div>
+                <div class="column javascript">
+                    <div class="content">
+                        <h4 class="sft">Connect Four</h4>
+                        <h5 class="xsft thin">(3rd Coded Game)</h5>
+                        <a href="JSGames/Connect4/connectFour.htm" target="_blank">
+                            <img src="images/Connect4.jpg" alt="Matching Game">
+                        </a>
+                    </div>
+                </div>
+                <div class="column javascript">
+                    <div class="content">
+                        <h4 class="sft">Noughts and Crosses</h4>
+                        <h5 class="xsft thin">(2nd Coded Game)</h5>
+                        <a href="JSGames/NoughtsAndCrosses/NoughtsAndCrosses.htm" target="_blank">
+                            <img src="images/NoughtsAndCrosses.jpg" alt="Matching Game">
+                        </a>
+                    </div>
+                </div>
+                <div class="column other">
+                    <div class="content">
+                        <h4 class="sft">Simple Matching Game</h4>
+                        <h5 class="xsft thin">(1st js Game)</h5>
+                        <a href="https://www.youtube.com/watch?v=q8ZVi-ymAvU" target="_blank">
+                            <img src="images/Junior_Golf_Video.jpg" alt="Advert Video Junior Golf">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column other">
+                    <div class="content">
+                        <h4 class="sft">Golf Tuition</h4>
+                        <h5 class="xsft thin">(Flyer)</h5>
+                        <a href="#img1"><img src="images/Junior_Golf_Lessons.jpg" alt="Golf Tuition Flyer"></a>
+                        <a href="#_" class="lightbox" id="img1"><img src="images/Junior_Golf_Lessons.jpg"></a>
+                    </div>
+                </div>
+                <div class="column other">
+                    <div class="content">
+                        <h4 class="sft">Junior Golf</h4>
+                        <h5 class="xsft thin">(Social Media)</h5>
+                        <a href="#img2"><img src="images/Junior_Winter_League.jpg" alt="Junior Social Media Post"></a>
+                        <a href="#_" class="lightbox" id="img2"><img src="images/Junior_Winter_League.jpg"></a>
+                    </div>
+                </div>
+                <div class="column other">
+                    <div class="content">
+                        <h4 class="sft">Golf Beaver</h4>
+                        <h5 class="xsft thin">(Business Card)</h5>
+                        <a href="#img3"><img src="images/Bussiness_Card.jpg" alt="Golf Beaver Bussiness Card"></a>
+                        <a href="#_" class="lightbox" id="img3"><img src="images/Bussiness_Card.jpg"></a>
+                    </div>
+                </div>
+                <div class="column other">
+                    <div class="content">
+                        <h4 class="sft">Fudges Playhouse</h4>
+                        <h5 class="xsft thin">(Logo)</h5>
+                        <a href="#img4"><img src="images/Fudges_Playhouse_Logo.jpg" alt="Fudges Playhouse Logo"></a>
+                        <a href="#_" class="lightbox" id="img4"><img src="images/Fudges_Playhouse_Logo.jpg"></a>                    
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h6 class="sft thin">© 2020 All rights reserved. Charlie Beavers CV</h6>
+        </footer>
+    </body>
+    <script src="main.js"></script>
+</html>

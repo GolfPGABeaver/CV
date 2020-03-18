@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Matching Pairs </title>
+<script type="text/javascript" src="Pairs.js">
+</script>
+<style>
+body {
+	background-color: rgb(10,100,120);
+}
+
+div#grid {
+	position: relative;
+	width: 600px;
+	height: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	border-spacing: 0px;
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	border-collapse: collapse;
+	padding: 0px;
+	margin: 0px;
+}
+
+td {
+	border: 1px solid white;
+    	text-align: center;
+	width: 150px;
+	height: 150px;
+    	vertical-align: middle;
+	align-content: stretch;
+	padding: 0px;
+	margin: 0px;
+}
+
+h2 {
+	font-family: Verdana;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+form {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+
+}
+
+form button {
+	font-size: 20px;
+	background-color: blue;
+	color: white;
+	font-family: Verdana;
+	padding: 5px;
+}
+
+font {
+	font-family: Verdana;
+	font-size: 30px;
+	color: white;
+}
+
+</style>
+</head>
+<body>
+<div id="grid">
+<h2> Matching Pairs Game </h2>
+<table>
+<tr>
+<td> <img src="init.jpg" id="0" onClick="checkMatch(0)"> </td>
+<td> <img src="init.jpg" id="1" onClick="checkMatch(1)"> </td>
+<td> <img src="init.jpg" id="2" onClick="checkMatch(2)"> </td>
+<td> <img src="init.jpg" id="3" onClick="checkMatch(3)"> </td>
+</tr>
+<tr>
+<td> <img src="init.jpg" id="4" onClick="checkMatch(4)"> </td>
+<td> <img src="init.jpg" id="5" onClick="checkMatch(5)"> </td>
+<td> <img src="init.jpg" id="6" onClick="checkMatch(6)"> </td>
+<td> <img src="init.jpg" id="7" onClick="checkMatch(7)"> </td>
+</tr>
+<tr>
+<td> <img src="init.jpg" id="8" onClick="checkMatch(8)"> </td>
+<td> <img src="init.jpg" id="9" onClick="checkMatch(9)"> </td>
+<td> <img src="init.jpg" id="10" onClick="checkMatch(10)"> </td>
+<td> <img src="init.jpg" id="11" onClick="checkMatch(11)"> </td>
+</tr>
+</table>
+<form>
+<button type="button" onClick="restart()"> Play Again </button>
+<font> Click on two matching squares. </font>
+</form>
+</div>
+<audio id="hit_sound">
+<source src="depth_charge.mp3" type="audio/mpeg">
+</audio>
+<audio id="miss_sound">
+<source src="beep.mp3" type="audio/mpeg">
+</audio>
+<audio id="applause">
+<source src="applause.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
